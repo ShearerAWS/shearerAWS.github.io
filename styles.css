@@ -1,0 +1,145 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #000;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 35px;
+	letter-spacing: 2px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #5A5A5A;
+	border-bottom-width: 2px;
+}
+
+a:link {
+	color: #AAAADD;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color: #AAAADD;
+	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*
+* Mobile
+*/
+@media screen and (max-width : 740px) {
+	
+	.main-container {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.main {
+		position: absolute;
+		width: 100vw;
+		height: 500px;
+		margin-top: -250px;
+		top: 50%;
+		display: inline-block;
+	}
+	
+	.summary-container {
+		display: inline-block;
+		margin-top: 30px;
+		width: 80%;
+		text-align: center;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	.photo-container {
+		display: block;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	
+    img {
+		width: 120px;
+		height: 221px;
+	}
+	
+	h1 {
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		text-align: center;
+		font-size: 30px;
+	}
+}
+
+/*
+* Desktop
+*/
+@media screen and (min-width : 741px) {
+    .main-container {
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.main {
+		width: 586px;
+		height: 280px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -140px;
+		margin-left: -270px;
+	}
+
+	.photo-container {
+		width: 120px;
+		height: 221px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+	}
+	
+	h1 {
+		width: 310px;
+	}
+
+	.summary-container {
+		display: inline-block;
+		width: 430px;
+		margin-left: 30px;
+		height: 160px;
+	}
+	
+	img {
+		width: 120px;
+		height: 221px;
+		top: 50%;
+		left: 50%;
+		margin-top: -112px;
+		margin-left: -60px;
+		position: absolute;
+	}
+	.contact {
+		position: fixed;
+   		bottom: 0;
+    	right: 0;
+	}
+}
