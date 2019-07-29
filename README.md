@@ -2,4 +2,4 @@
 
   Personal website written in HTML / CSS.
   
-  shearer.dev
+  www.shearer.dev
