@@ -1,37 +1,204 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Alex Shearer</title>
-	<link
-		href="https://fonts.googleapis.com/css?family=Nunito:600|Roboto:400i"
-		rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:900" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Shearer</title>
+    
+    <!-- Inter typeface -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- Google Fonts used: DM Serif, Nanum Pen Script, Roboto, and various Material Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- Polyfill for Scroll Timeline for unsupported browsers (*cough* Firefox *cough*) -->
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-	<div class="container">
-		<div class="main-container">
-			<div class="main">
-				<div class="photo-container">
-					<img src="logo.png" alt="Alexander Shearer" />
-				</div>
-				<div class="summary-container">
-					<h1>Alex Shearer</h1>
-					<p>I am a Software Engineer at Microsoft. I graduated from Ohio State University in 2021 with a double major in
-						Computer Science and Data Analytics. In my free time I like to create games.
-						<br/><br/>
-						Email: <a href="mailto:alex@shearer.dev">alex@shearer.dev</a>
-						<br/>
-						<a href="resume.pdf">Resume</a> | 
-						<a href="https://www.linkedin.com/in/alexander-shearer/">LinkedIn</a> | 
-						<a href="https://github.com/ShearerAWS">GitHub</a> | 
-						<a href="https://alphaaxle.itch.io/">Itch.io</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div id="home"></div>
+    <div class="card-container start-card-container">
+        <div class="card start-card">
+            <a class="start-card-link" href="#home">
+                <div class="start-card-overlay">
+                </div>
+            </a>
+            <div class="start-card-content">
+                <div class="logo-holder">
+                    <img class="logo-image" src="logo.png" alt="Alex Shearer"/>
+                </div>
+                <div class="about-me-section">
+                    <h1>Alex Shearer</h1>
+                    <p class="blurb scroll-hide">
+                        <span class="hello-text-holder">
+                            <span class="hello-text">
+                                <span>H</span><span>i</span><span>&#8199;</span><span>T</span><span>h</span><span>e</span><span>r</span><span>e</span><span>!</span>
+                            </span>
+                        </span>
+                        <br>
+                        Software Engineer previously at Microsoft<br>
+                        currently exploring new opportunities.<br>
+                        Passionate about creating: code, art, <br>
+                        games, food, and really everything!<br>
+                    </p>
+                </div>
+            </div>
+            <div class="scroll-hide">
+                <a href="#info">
+                    <span class="scroll-down scroll-hide material-symbols-outlined">keyboard_arrow_down</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-container info-card-container">
+        <div class="card info-card" id="info">
+            <div class="info-card-content">
+                <div class="section sec-0"></div>
+                <div class="about-me section sec-1">
+                    <h3>Welcome!</h3>
+                    <p>
+                        I'm a <b>fullstack engineer</b> who loves <b>creating.</b>
+                    </p>
+                    <p>
+                        Regardless if it's a website, microservice, game, painting, or a new recipe - whatever I create, I find joy in the intersection of creative and technical problem-solving.
+                    </p>
+                    <p>   
+                        I have experience in a variety of languages and frameworks, and I'm constantly learning new ones.
+                        I'm currently looking for new opportunities where I can continue to grow and create amazing things!
+                    </p>
+                    <p class="about-corner-text">   
+                        In my free time you'll find me participating in game jams, playing the clarinet in a local community band, practicing art, and generally obsessing over <span class="font-hover">typefaces</span>.
+                    </p>
+                </div>
+                <div class="technical-section section sec-2">
+                    <span class="technical-tag">
+                        some of my<br>
+                        experiences<br>
+                        and skills<br>
+                    </span>
+                    <img class="technical-arrow" src="icons/arrow.svg"/>
+                    <br><br>
+                    <h4>Microsoft</h4>
+                    <h5>Software Engineer || 2020 (intern), 2021 - 2024</h5>
+                    <p>
+                        Fullstack developer on Microsoft 365 Admin Center.<br>
+                        Created, deployed, and maintained numerous backend<br>
+                        services and frontend features to millions of users<br>
+                        worldwide using Azure, .NET, React, and TypeScript.
+                    </p>
+                    <h4>84.51°</h4>
+                    <h5>Software Engineer Intern || 2019</h5>
+                    <p>
+                        Created automation tools to deploy and manage<br>
+                        machine learning models for personalized marketing<br>
+                        campaigns using Python and AngularJS.<br>
+                    </p>
+                    <h4>Ohio State University</h4>
+                    <h5>BS in Computer Science & Data Analytics || 2021</h5>
+                    <p>
+                        Specialization in AI & Machine Learning<br>
+                        President of University's Game Dev Club<br>
+                        Minor in Mathematics<br>
+                    </p>
+                </div>
+                <div class="section sec-3">
+                    <div class="language-carousel-mask">
+                        <div class="language-carousel">
+                            <span class="language-item">C#</span>
+                            <span class="language-item">.NET</span>
+                            <span class="language-item">Azure</span>
+                            <span class="language-item">Godot</span>
+                            <span class="language-item">React</span>
+                            <span class="language-item">TypeScript</span>
+                            <span class="language-item">CSS</span>
+                            <span class="language-item">Python</span>
+                            <span class="language-item">Unity</span>
+                        </div>
+                        <!-- Duplicated for endless scroll, aria-hidden so ignored by screenreaders -->
+                        <div aria-hidden class="language-carousel">
+                            <span class="language-item">C#</span>
+                            <span class="language-item">.NET</span>
+                            <span class="language-item">Azure</span>
+                            <span class="language-item">Godot</span>
+                            <span class="language-item">React</span>
+                            <span class="language-item">TypeScript</span>
+                            <span class="language-item">CSS</span>
+                            <span class="language-item">Python</span>
+                            <span class="language-item">Unity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="source-code section sec-4">
+                    <a href="https://github.com/ShearerAWS/shearerAWS.github.io">
+                        <div class="code-icon">
+                            <img class="code-icon-image" src="icons/code.svg" alt="Source Code">
+                            <span>See the code</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-section section sec-5">
+                    <span class="game-title">Check out games I've made!</span>
+                    <a href="https://alphaaxle.itch.io/" class="game-carousel-mask"> 
+                        <div class="game-carousel">
+                            <img class="game-thumbnail rot-1" src="images/tempo.png">
+                            <img class="game-thumbnail rot-2" src="images/dino.png">
+                            <img class="game-thumbnail rot-3" src="images/3.png">
+                            <img class="game-thumbnail rot-4" src="images/tiny-repair.png">
+                            <img class="game-thumbnail rot-5" src="images/mini-mafia.png">
+                        </div>
+                        <!-- Duplicated for endless scroll, aria-hidden so ignored by screenreaders -->
+                        <div aria-hidden class="game-carousel">
+                            <img class="game-thumbnail rot-1" src="images/tempo.png">
+                            <img class="game-thumbnail rot-2" src="images/dino.png">
+                            <img class="game-thumbnail rot-3" src="images/3.png">
+                            <img class="game-thumbnail rot-4" src="images/tiny-repair.png">
+                            <img class="game-thumbnail rot-5" src="images/mini-mafia.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="social-icon-holder section sec-6">
+                    <span class="social-corner"></span>
+                    <a href="mailto:alex@shearer.dev">
+                        <div class="social-icon">
+                            <img class="social-icon-image" src="icons/mail.svg" alt="Email">
+                            <span>alex@shearer.dev</span>
+                        </div>
+                    </a>
+                    <a href="resume.pdf">
+                        <div class="social-icon">
+                            <img class="social-icon-image" src="icons/resume.svg" alt="Resume">
+                            <span>Full Resume</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/sheareraws">
+                        <div class="social-icon">
+                            <img class="social-icon-image" src="icons/github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-shearer">
+                        <div class="social-icon">
+                            <img class="social-icon-image linked-in-icon" src="icons/linkedin.svg" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+                    <a href="https://bsky.app/profile/anxioussky.bsky.social">
+                        <div class="social-icon">
+                            <img class="social-icon-image" src="icons/bluesky.svg" alt="Bluesky">
+                            <span>Bluesky</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="photo-section section sec-7">
+                    <img class="photo" src="images/photo.jpg" alt="Alex Shearer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="opacity: 0; height: 0; font-size: 2px;">
+        This text is only here to make the polyfill work properly on Firefox. If you see this, something has gone wrong.
+    </div>
 </body>
-</html>
