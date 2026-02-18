@@ -1065,7 +1065,7 @@ body {
 }
 
 @keyframes card-scroll-mobile {
-    90%, to { 
+    85%, to { 
         padding: 0;
         height: calc(var(--xl-border-radius) * 2);
         width: calc(var(--xl-border-radius) * 2);
@@ -1076,13 +1076,13 @@ body {
 }
 
 @keyframes logo-holder-scroll-mobile {
-    90%, to {
+    85%, to {
         height: 100%;
     }
 }
 
 @keyframes icon-scroll-mobile {
-    90%, to {
+    85%, to {
         height: 70%;
         bottom: 15%;
     }
