@@ -33,6 +33,21 @@
     --card-padding-px: 2rem;
 
     --block-unit: calc((80vh - var(--grid-gap-px) * 3.0) / 8.0);
+
+    --sec-2-clip-shape: shape(
+        from 0 100%,
+        vline to calc(40% + var(--m-border-radius) + var(--grid-gap-px) / 2),
+        arc by var(--m-border-radius) calc(var(--m-border-radius) * -1)
+            of var(--m-border-radius) cw,
+        hline to calc(33.33333% - var(--grid-gap-px) * 0.5 - var(--xl-border-radius)),
+        arc by calc(var(--xl-border-radius) + var(--grid-gap-px)) calc((var(--xl-border-radius) + var(--grid-gap-px)) * -1) 
+            of calc(var(--xl-border-radius) + var(--grid-gap-px)),
+        vline to var(--m-border-radius),
+        arc by var(--m-border-radius) calc(var(--m-border-radius) * -1)
+            of var(--m-border-radius) cw,
+        hline to 100%,
+        vline to 100%,
+    );
     
     scroll-behavior: smooth;
     font-feature-settings: 'liga' 1, 'calt' 1; /* Inter font fix for chrome */
@@ -422,20 +437,7 @@ body {
 .sec-2 {
     grid-row: 1 / span 2;
     grid-column: 2 / span 2;
-    clip-path: shape(
-        from 0 100%,
-        vline to calc(40% + var(--m-border-radius) + var(--grid-gap-px) / 2),
-        arc by var(--m-border-radius) calc(var(--m-border-radius) * -1)
-            of var(--m-border-radius) cw,
-        hline to calc(33.33333% - var(--grid-gap-px) * 0.5 - var(--xl-border-radius)),
-        arc by calc(var(--xl-border-radius) + var(--grid-gap-px)) calc((var(--xl-border-radius) + var(--grid-gap-px)) * -1) 
-            of calc(var(--xl-border-radius) + var(--grid-gap-px)),
-        vline to var(--m-border-radius),
-        arc by var(--m-border-radius) calc(var(--m-border-radius) * -1)
-            of var(--m-border-radius) cw,
-        hline to 100%,
-        vline to 100%,
-    );
+    clip-path: var(--sec-2-clip-shape);
 }
 
 .sec-3 {
@@ -839,8 +841,10 @@ body {
 /* 
     Fallback for browsers that do not support clip-path: shape() 
     *cough* Firefox *cough*
+
+    UPDATE 2026-02-27: Firefox 148 now supports shape()... but the implementation is very buggy and not working with shape-outside for some reason, so leaving this in for now.
 */
-@supports not (clip-path: shape(from 0 0, hline to 100%)) {
+@supports not (shape-outside: shape(from 0 0, hline to 1)) {
     .sec-0 {
         position: relative;
         border: var(--white) var(--grid-gap-px) solid;
